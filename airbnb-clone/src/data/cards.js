@@ -2,7 +2,8 @@ import KatieImage from '../images/katie-zaferes.png';
 
 
 export default [
-     {
+    {
+        id: 1,
         image: KatieImage,
         info: [
           {
@@ -11,9 +12,11 @@ export default [
             cost: "From $136 / person",
           },
         ],
-        isVisible: true,
+        openSpots: 0,
+        location: "online"
     },
     {
+        id: 2,
         image: KatieImage,
         info: [
           {
@@ -22,9 +25,11 @@ export default [
             cost: "From $136 / person",
           },
         ],
-        isVisible: true,
+        openSpots: 0,
+        location: "online"
     },
     {
+        id: 3,
         image: KatieImage,
         info: [
           {
@@ -33,6 +38,7 @@ export default [
             cost: "From $136 / person",
           },
         ],
-        isVisible: true,
+        openSpots: 1,
+        location: "online"
       }
 ]

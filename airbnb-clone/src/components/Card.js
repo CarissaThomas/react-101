@@ -3,22 +3,26 @@ import Star from '../images/star.png';
 
 
 export default function Card(props) {
-  const katie = "Katie Zaferes";
-
+  console.log(props)
+  let badgeText
+  if (props.item.openSpots === 0) {
+    badgeText = "SOLD OUT"
+  } else if (props.item.location === "online") { 
+    badgeText = "ONLINE"
+  }
   return (
-    props.isVisible ? (
       <div className="cardsWrapper">
+      {badgeText && <div className="badge">{badgeText}</div>}
       <div className="cardContainer">
-          <img className="katie" src={props.image} />
+          <img className="katie" src={props.item.image} />
         <div>
           <img className="star" src={Star} />
-          <p>{props.rating}</p>
-          <p>{props.title} {katie}</p>
-          <p>{props.cost}</p>
+          <p>{props.item.info[0].rating}</p>
+          <p>{props.item.info[0].title} "Katie Zaferes"</p>
+          <p>{props.item.info[0].cost}</p>
         </div>
         </div>
         </div>
-    ) : null
   );
 }
 

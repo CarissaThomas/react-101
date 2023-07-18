@@ -8,11 +8,10 @@ function App() {
 
   const cardData = Cards.map(c => { 
     return <Card
-    image={c.image}
-    rating={c.info[0].rating}
-    title={c.info[0].title}
-    cost={c.info[0].cost}
-    isVisible={c.isVisible} />
+      key={c.id}
+      item={c}
+      //{...item} alternate syntax for line above  
+    />
   })
 
 //ALT SYNTAX FOR ACCESSING OBJECT PROPERTIES 

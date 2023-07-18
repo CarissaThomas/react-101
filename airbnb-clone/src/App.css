@@ -54,7 +54,17 @@
 .cardsWrapper { 
   display: inline-flex;
   min-height: 100vh;
+  position: relative;
+}
 
+.badge {
+  position: absolute;
+  width: 110/px;
+  margin-left: 110px;
+  margin-top: 35px;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5%;
 }
 
 .cardContainer {
