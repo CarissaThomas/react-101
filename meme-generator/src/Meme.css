@@ -18,6 +18,11 @@
   text-indent: 5px;
 }
 
+.memeImage {
+  margin-top: 20px;
+  width: 100%;
+}
+
 main {
   padding: 36px;
 }
