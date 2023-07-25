@@ -7,7 +7,8 @@ export default function Meme() {
     topText: '',
     bottomText: '',
     randomImage: 'https://i.imgflip.com/30b1gx.jpg',
-  }); // meme object
+  }); 
+  
   const [allMemeImages, setAllMemeImages] = React.useState(memeData); //Array of memes
 
   function displayMeme() {
