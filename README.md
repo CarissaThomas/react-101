@@ -1,9 +1,3 @@
-## Creating a new React project using NPM 
-
-* create-react-app my-react-project
-* cd my-react-project
-* npm start
-
 # Scrimba React Learning Journey 
 
 This repository documents my journey as I delve into the world of ReactJS through Scrimba's interactive learning platform. 
@@ -33,4 +27,11 @@ While this project marks my initial foray into React, my journey doesn't stop he
 ## Acknowledgments
 
 A big thank you to Scrimba and the instructors who put together the React course. It's been an engaging and enlightening experience!
+
+## Creating a new React project using NPM 
+
+* create-react-app my-react-project
+* cd my-react-project
+* npm start
+
 
