@@ -4,11 +4,12 @@ import Header from './Header'
 import Meme from './Meme'
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <Header />
-      <Meme />
-    </div>
+    <main >
+      <h1>Boxes will go here</h1>
+    </main>
   );
 }
 

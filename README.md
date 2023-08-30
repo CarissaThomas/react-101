@@ -3,3 +3,6 @@
 * create-react-app my-react-project
 * cd my-react-project
 * npm start
+
+## Install prettier 
+* npm install --save-dev prettier 
