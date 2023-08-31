@@ -1,0 +1,6 @@
+.box {
+    width: 100px;            /* Set the width of the div */
+    height: 100px;           /* Set the height of the div */
+    border: 1px solid black; /* Add a black border to the div */
+  }
+  
