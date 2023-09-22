@@ -6,7 +6,18 @@ import Box from './components/box';
 function App() {
   const [stateBoxes, setBoxes] = React.useState(boxes);
 
+
   function toggle(id) {
+    setBoxes(prevState => 
+      prevState.map(box => 
+        box.id === id ? { ...box, on: !box.on } : box
+      )
+    );
+}
+
+  //This is longer version of the function above
+  
+/*   function toggle(id) {
     console.log(id)
     setBoxes(prevState => {
       const newBoxes = [];
@@ -26,7 +37,7 @@ function App() {
       }
       return newBoxes;
     })
-  }
+  } */
 
   const boxData = stateBoxes.map(c => {
     return <Box key={c.id} item={c} on={c.on} toggle={toggle} />;
