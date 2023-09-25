@@ -34,7 +34,7 @@ A big thank you to Scrimba and the instructors who put together the React course
 * cd my-react-project
 * npm start
 
-<<<<<<< HEAD
+
 ## Install prettier 
 * npm install --save-dev prettier 
 
@@ -53,4 +53,3 @@ After that, update .eslintrc to include:
 }
 =======
 
->>>>>>> 1d9a8ae7c6bd324239e135c802848d1206127981

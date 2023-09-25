@@ -7,9 +7,9 @@ export default function Meme() {
     topText: '',
     bottomText: '',
     randomImage: 'https://i.imgflip.com/30b1gx.jpg',
-  }); 
-  
-  const [allMemeImages, setAllMemeImages] = React.useState(memeData); //Array of memes
+  });
+
+  const [allMemeImages] = React.useState(memeData); //Array of memes
 
   function displayMeme() {
     const randomNumber = Math.floor(
@@ -43,7 +43,7 @@ export default function Meme() {
           Get a new meme image
         </button>
       </form>
-      {imgElement}
+      <div class="image-wrapper">{imgElement}</div>
     </main>
   );
 }
