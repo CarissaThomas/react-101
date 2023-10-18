@@ -10,17 +10,27 @@ export default function Meme() {
 
   const [allMemeImages, setAllMemeImages] = React.useState([]); //Array of memes
 
-  React.useEffect(() => { 
-    fetch("https://api.imgflip.com/get_memes")
-      .then(res => res.json())
-      .then(response => setAllMemeImages(response.data.memes))
-  }, [])
+  React.useEffect(() => {
+    async function fetchMemes() {
+      try {
+        const response = await fetch('https://api.imgflip.com/get_memes');
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const jsonData = await response.json();
+        console.log(jsonData)
+        setAllMemeImages(jsonData.data.memes);
+      } catch (error) {
+
+      }
+    }
+
+    fetchMemes();
+  }, []);
 
   function displayMeme() {
-
-    const randomNumber = Math.floor(
-      Math.random() * allMemeImages.length,
-    );
+    const randomNumber = Math.floor(Math.random() * allMemeImages.length);
 
     setMeme(prevState => {
       return {
@@ -40,7 +50,7 @@ export default function Meme() {
     setMeme(prevState => {
       return {
         ...prevState,
-        [name]: value
+        [name]: value,
       };
     });
   }
