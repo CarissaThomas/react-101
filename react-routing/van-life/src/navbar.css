@@ -1,0 +1,19 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEF5EC;
+  border-radius: 15px;
+}
+
+.navbar-container h1 {
+  margin-left: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center; /* align vertical */
+}
+
+.navbar-links a {
+  margin: 20px;
+}

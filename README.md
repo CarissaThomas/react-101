@@ -38,18 +38,6 @@ A big thank you to Scrimba and the instructors who put together the React course
 ## Install prettier 
 * npm install --save-dev prettier 
 
-## Install EsLint
-* # Using npm
-npm install eslint --save-dev
-
-npm install eslint-plugin-react babel-eslint --save-dev
-
-After that, update .eslintrc to include:
-
-{
-  "parser": "babel-eslint",
-  "plugins": ["react"],
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
-}
-=======
-
+## Install React Router
+* npm install react-router-dom
+* import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
