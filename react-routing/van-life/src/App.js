@@ -5,6 +5,9 @@ import Home from './home';
 import About from './about';
 import Navbar from './navbar';
 import Footer from './footer';
+import Vans from './vans';
+import "./server"
+
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
       </Routes>
       <Footer />
     </BrowserRouter>
