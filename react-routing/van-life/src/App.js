@@ -6,6 +6,7 @@ import About from './about';
 import Navbar from './navbar';
 import Footer from './footer';
 import Vans from './vans';
+import VanDetail from './vanDetail';
 import "./server"
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

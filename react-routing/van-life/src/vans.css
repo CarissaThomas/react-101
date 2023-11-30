@@ -1,7 +1,8 @@
 .vans-container {
     background-color: #fef5ec;
-    display: flex;
-    flex-direction: column;
+    display: grid; /* changed from flex to grid */
+    grid-template-columns: repeat(2, 1fr); /* makes 2 columns */
+    gap: 20px; /* adjust this for spacing between images */
     align-items: center; /* align vertical */
     justify-content: center;
     width: 100%;
@@ -9,4 +10,8 @@
     box-sizing: border-box; /* Includes padding and border in element's total width and height */
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.image-container img {
+    width: 75%; /* each image container takes 100% of their grid cell */ 
 }
