@@ -1,0 +1,15 @@
+.footer-container p {
+    color: #8C8C8C;
+}
+
+.footer-container  {
+    background-color: #252525;
+    height: 65px;
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

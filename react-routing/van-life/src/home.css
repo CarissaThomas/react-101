@@ -1,0 +1,19 @@
+.home-container  {
+    background-color: gray;
+    height: calc(100vh - 85px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* align vertical */
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.home-container button {
+    background-color: orange;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+}
