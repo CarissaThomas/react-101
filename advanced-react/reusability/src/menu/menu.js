@@ -1,24 +1,32 @@
 import React from 'react';
-import MenuButton from './menuButton';
-import MenuDropdown from './menuDropdown';
 import './menu.css';
 
-export default function Menu({ children }) {
+const MenuContext = React.createContext();
+
+export default function Menu({children}) {
   const [open, setOpen] = React.useState(true);
 
   function toggle() {
-    console.log("toggled")
+    console.log('toggled');
     setOpen(prevOpen => !prevOpen);
   }
 
   return (
-    <div className="menu">
-      {React.Children.map(children, (child) => {
+    <MenuContext.Provider value={{ open, toggle }}>
+      <div className="menu">
+        {children}
+
+        {/* Not suggested React.Children method to drill state to multiple child components  */}
+        {/* {React.Children.map(children, child => {
         return React.cloneElement(child, {
           open,
           toggle,
         });
-      })}
-    </div>
+      })} */}
+      </div>
+    </MenuContext.Provider>
   );
 }
+
+export { MenuContext };
+
